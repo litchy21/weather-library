@@ -1,0 +1,8 @@
+{
+  "name": "litchy21/weather-library",
+  "autoload": {
+    "psr-0" : {
+      "Litchy21\\WeatherLibrary" : "src"
+    }
+  }
+}
