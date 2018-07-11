@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Litchy21\\WeatherLibrary' => array($baseDir . '/src'),
 );
