@@ -2,6 +2,7 @@
 
 namespace Litchy21\WeatherLibrary;
 
+use GuzzleHttp\Client;
 
 class Weather
 {
@@ -14,7 +15,7 @@ class Weather
 
     public function getWeather()
     {
-        $client = new \GuzzleHttp\Client();
+        $client = new Client();
 
         $uri = '/data/2.5/weather?q=Paris&APPID='.$this->apiKey;
         $res = $client->request('GET', $uri);
