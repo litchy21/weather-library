@@ -47,7 +47,7 @@ $weather = new Weather();
 
 return $this->render('weather/index.html.twig', [
             'weather' => $weather->getWeather(),
-        ]);`
+        ]);
 ```
 
 And in your twig template you can call it like this :
@@ -55,4 +55,4 @@ And in your twig template you can call it like this :
 ```
  <h1>Weather from {{ weather.city }}</h1>
  <p>The current weather is: {{ weather.description }}</p>
-``
+```
